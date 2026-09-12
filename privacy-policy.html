@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – VoltageDropVisualizer | Dhaarani N K</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #1a1a2e;
+      background: #f5f7fa;
+    }
+    header {
+      background: #1B3A6B;
+      color: #fff;
+      padding: 36px 0 28px;
+      text-align: center;
+    }
+    header img.logo {
+      height: 48px;
+      margin-bottom: 12px;
+    }
+    header h1 {
+      font-size: 1.7rem;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+    header p {
+      font-size: 0.95rem;
+      color: #a8c4f0;
+      margin-top: 6px;
+    }
+    .badge {
+      display: inline-block;
+      background: #0E7490;
+      color: #fff;
+      font-size: 0.78rem;
+      padding: 3px 10px;
+      border-radius: 20px;
+      margin-top: 10px;
+    }
+    main {
+      max-width: 820px;
+      margin: 40px auto 60px;
+      padding: 0 20px;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 12px rgba(27,58,107,0.08);
+      padding: 36px 40px;
+      margin-bottom: 28px;
+    }
+    h2 {
+      font-size: 1.15rem;
+      color: #1B3A6B;
+      border-left: 4px solid #2563EB;
+      padding-left: 12px;
+      margin-bottom: 14px;
+      font-weight: 700;
+    }
+    p { margin-bottom: 12px; }
+    ul {
+      padding-left: 22px;
+      margin-bottom: 12px;
+    }
+    ul li { margin-bottom: 6px; }
+    .highlight-box {
+      background: #EFF6FF;
+      border: 1px solid #BFDBFE;
+      border-radius: 8px;
+      padding: 16px 20px;
+      margin: 16px 0;
+      color: #1e40af;
+      font-size: 0.93rem;
+    }
+    .highlight-box strong { color: #1B3A6B; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 0.92rem;
+    }
+    th {
+      background: #1B3A6B;
+      color: #fff;
+      padding: 10px 14px;
+      text-align: left;
+    }
+    td {
+      padding: 9px 14px;
+      border-bottom: 1px solid #e5e7eb;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:nth-child(even) td { background: #f8fafc; }
+    .pill-green { color: #15803d; font-weight: 600; }
+    footer {
+      text-align: center;
+      font-size: 0.83rem;
+      color: #6b7280;
+      padding: 28px 20px 40px;
+    }
+    footer a { color: #2563EB; text-decoration: none; }
+    a { color: #2563EB; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p>VoltageDropVisualizer — Autodesk Revit Add-in</p>
+  <span class="badge">Dhaarani N K</span>
+</header>
+
+<main>
+
+  <!-- Effective date -->
+  <div class="card">
+    <h2>Overview</h2>
+    <p><strong>Publisher:</strong> Dhaarani N K<br>
+       <strong>Product:</strong> VoltageDropVisualizer (Autodesk Revit Add-in)<br>
+       <strong>Effective Date:</strong> 12 September 2026<br>
+       <strong>Contact:</strong> <a href="mailto:dhaarani.nk@conservesolution.com">dhaarani.nk@conservesolution.com</a>
+    </p>
+    <div class="highlight-box">
+      <strong>Key summary:</strong> VoltageDropVisualizer runs entirely on your local computer inside Autodesk Revit. It does <em>not</em> transmit your project data, electrical circuit data, or any personal information to any organization or any third-party server.
+    </div>
+    <p>This Privacy Policy explains what information, if any, VoltageDropVisualizer ("the App") collects, how it is used, and your rights regarding that information. By installing and using the App you agree to the practices described here.</p>
+  </div>
+
+  <!-- 1. Data collected -->
+  <div class="card">
+    <h2>1. Data Collected by the App</h2>
+    <p>The App reads data from your open Autodesk Revit project to perform its analysis. This data is processed exclusively in memory on your local workstation and is never transmitted to an external server.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Data Type</th>
+          <th>How Collected</th>
+          <th>Purpose</th>
+          <th>Stored Externally?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Electrical circuit parameters (panel names, circuit numbers, load values, conductor sizes, voltages, lengths)</td>
+          <td>Read from the active Revit model via the Revit API at analysis time</td>
+          <td>Voltage drop calculation and colour-coding</td>
+          <td class="pill-green">No — local only</td>
+        </tr>
+        <tr>
+          <td>Project name</td>
+          <td>Read from the Revit document</td>
+          <td>Displayed in the App header and included in exported reports</td>
+          <td class="pill-green">No — local only</td>
+        </tr>
+        <tr>
+          <td>Exported report files (Excel / CSV)</td>
+          <td>Written to a location you choose on your file system</td>
+          <td>Saved only when you click Export Excel or Export CSV</td>
+          <td class="pill-green">No — saved to your chosen path only</td>
+        </tr>
+        <tr>
+          <td>Crash / error logs</td>
+          <td>Written locally by the .NET runtime when an unhandled exception occurs</td>
+          <td>Debugging. Not automatically sent anywhere.</td>
+          <td class="pill-green">No — local only</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p>The App does <strong>not</strong> collect or transmit:</p>
+    <ul>
+      <li>Your name, email address, or any other personal identification</li>
+      <li>Revit model geometry, drawings, or documents</li>
+      <li>IP addresses or location data</li>
+      <li>Usage telemetry, analytics events, or crash reports to any remote server</li>
+      <li>Login credentials of any kind</li>
+    </ul>
+  </div>
+
+  <!-- 2. Third parties -->
+  <div class="card">
+    <h2>2. Third-Party Data Sharing</h2>
+    <p>It <strong>does not share any data with third parties</strong>. Because the App operates entirely offline on your local workstation, no data originating from your Revit model or your computer reaches any external analytics platform, advertising network, or other third-party service.</p>
+    <p>The App uses the following open-source libraries, all of which execute locally and make no network calls:</p>
+    <ul>
+      <li>Microsoft .NET runtime libraries — used for core application logic</li>
+      <li>Autodesk Revit API libraries — used to read Revit model data</li>
+      <li>ClosedXML / EPPlus (if applicable) — used for local Excel export</li>
+    </ul>
+    <p>If a future version of the App introduces any third-party integration (e.g., cloud storage), this policy will be updated and users notified before the feature is activated.</p>
+  </div>
+
+  <!-- 3. Data retention -->
+  <div class="card">
+    <h2>3. Data Retention and Deletion</h2>
+    <p>Since the App does not transmit or store your data on any organization's servers, there is no retention period applicable on our end.</p>
+    <ul>
+      <li><strong>In-memory data:</strong> All electrical circuit data is held in memory only for the duration of the App session. It is discarded immediately when you close the VoltageDropVisualizer window or close Revit.</li>
+      <li><strong>Exported files:</strong> Excel or CSV reports are written to the file path you select. Any organization has no access to these files. You may delete them at any time.</li>
+      <li><strong>Local error logs:</strong> If the .NET runtime writes an error log to your Windows user profile, you may delete this file manually. It is not sent anywhere automatically.</li>
+    </ul>
+  </div>
+
+  <!-- 4. Revoking consent / deletion -->
+  <div class="card">
+    <h2>4. Revoking Consent and Requesting Data Deletion</h2>
+    <p>Because it does not collect or hold any personal data from App users, there is nothing to delete on our servers. However, you may:</p>
+    <ul>
+      <li><strong>Stop using the App at any time</strong> by uninstalling it from your Revit add-ins folder (<code>%AppData%\Autodesk\Revit\Addins\&lt;version&gt;\</code>).</li>
+      <li><strong>Delete any locally exported files</strong> (Excel / CSV reports) directly from your file system.</li>
+      <li><strong>Contact us</strong> at <a href="mailto:dhaarani.nk@conservesolution.com">dhaarani.nk@conservesolution.com</a> if you have any questions about data handling. We will respond within 5 business days.</li>
+    </ul>
+    <p>If we ever receive personal data (e.g., through a support email you send us), it will be used solely to respond to your enquiry and will not be shared with third parties. You may request deletion of such correspondence at any time by emailing us.</p>
+  </div>
+
+  <!-- 5. Children -->
+  <div class="card">
+    <h2>5. Children's Privacy</h2>
+    <p>VoltageDropVisualizer is a professional engineering tool intended for adults working in the AEC (architecture, engineering, and construction) industry. We do not knowingly collect any information from individuals under the age of 16. If you believe a minor has inadvertently used the App, please contact us at <a href="mailto:dhaarani.nk@conservesolution.com">dhaarani.nk@conservesolution.com</a>.</p>
+  </div>
+
+  <!-- 6. Security -->
+  <div class="card">
+    <h2>6. Security</h2>
+    <p>Although the App does not transmit data, we are committed to the security of the software itself:</p>
+    <ul>
+      <li>The App DLL is compiled against current, patched versions of .NET to avoid known vulnerabilities.</li>
+      <li>We recommend downloading the App only from the official <a href="https://apps.autodesk.com" target="_blank" rel="noopener">Autodesk App Store</a>.</li>
+      <li>We follow secure development practices and review dependencies for known CVEs prior to each release.</li>
+    </ul>
+  </div>
+
+  <!-- 7. Changes -->
+  <div class="card">
+    <h2>7. Changes to This Privacy Policy</h2>
+    <p>We may update this Privacy Policy to reflect changes in the App's functionality or applicable law. When we do, we will:</p>
+    <ul>
+      <li>Update the <strong>Effective Date</strong> at the top of this page.</li>
+      <li>Notify users via the App Store update notes if the change is material.</li>
+    </ul>
+    <p>Continued use of the App after changes are posted constitutes acceptance of the updated policy.</p>
+  </div>
+
+  <!-- 8. Contact -->
+  <div class="card">
+    <h2>8. Contact Us</h2>
+    <p>For any privacy-related questions, requests, or concerns, please contact:</p>
+    <p>
+      <strong>Dhaarani N K</strong><br>
+      Trichy, Tamil Nadu, India<br>
+      Email: <a href="mailto:dhaarani.nk@conservesolution.com">dhaarani.nk@conservesolution.com</a><br>
+      Website: <a href="https://conservesolution.com" target="_blank" rel="noopener">conservesolution.com</a>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 Dhaarani N K. All rights reserved.</p>
+  <p style="margin-top:6px;">
+    <a href="https://conservesolution.com">conservesolution.com</a> &nbsp;·&nbsp;
+    <a href="mailto:dhaarani.nk@conservesolution.com">dhaarani.nk@conservesolution.com</a>
+  </p>
+</footer>
+
+</body>
+</html>
